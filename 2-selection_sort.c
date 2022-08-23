@@ -31,7 +31,7 @@ void selection_sort(int *array, size_t size)
 		for (j = i ; j < size - 1; j++)
 		{
 			if (array[i] > array[j])
-				swap(&array[i], &array[j]);
+				array[i] = array[j];
 		}
 	}
 }
